@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
 
     <title>добавить новость</title>
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">добавить новость</a>
+    <!--навигация по сайту (bootstrap 4)-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="administrator">панель администратора</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,17 +33,19 @@
     </ul>
   </div>
 </nav>
+  <!--end-->
 <form class = "container" style="margin-top:24px;">
   <div class="form-group">
-    <label for="exampleInputEmail1">Название новости</label>
+    <label>Название новости</label>
     <input type="text" class="form-control" placeholder="Введите название новости ">
     <small id="emailHelp" class="form-text text-muted"></small>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Новость</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Введите новость"></textarea>
+    <label>Новость</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Введите новость"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Выложить</button>
+  <button type="submit" class="btn btn-dark">Выложить</button>
+  <button type="submit" class="btn btn-dark">смотреть предложенные</button>
 </form>
 
     <!-- Optional JavaScript -->
