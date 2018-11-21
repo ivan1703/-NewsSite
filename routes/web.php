@@ -20,7 +20,9 @@ Route::get('administrator', function () {
 Route::get('create', function () {
     return view('newnews');
 });
-
+Route::get('CreateNews',function(){
+    return view('CreateNews');
+});
 
 
 
